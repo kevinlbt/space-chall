@@ -1,0 +1,82 @@
+.home {
+
+    background-image: url('../../public/assets/home/background-home-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    @media (min-width:640px) and (max-width:1024px) {
+        background-image: url('../../public/assets/home/background-home-tablet.jpg');
+    }
+    @media (min-width:1024px) {
+        background-image: url('../../public/assets/home/background-home-desktop.jpg');
+    }
+
+    .text-home {
+        color: $white;
+        
+        h1 {
+            font-family: $barlow;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 4.75px;
+
+            @media (min-width:1024px) {
+                font-size: 22px;
+            }
+        }
+        h2 {
+            font-family: $Bellefair;
+            font-size: 100px;
+            text-transform: uppercase;
+
+            @media (min-width:640px) and (max-width:1024px) {
+                font-size: 150px;
+            }
+            @media (min-width:1024px) {
+                font-size: 170px;
+            }
+        }
+
+        p {
+            font-family: $barlow;
+            font-size: 15px;
+            text-align: center;
+            line-height: 30px;
+
+            @media (min-width:640px) and (max-width:1024px) {
+                width: 60%;
+            }
+            @media (min-width:1024px) {
+                font-size: 20px;
+                text-align: left;
+            }
+            
+        }
+
+        .explore {
+            position: relative;
+            font-family: $Bellefair;
+            font-size: 20px;
+            color: $bluespace;
+            text-transform: uppercase;
+            transition: all 0.3s;
+
+            &:hover {
+                border: solid 1.5em $nav-color;
+                width: 25rem;
+                height: 25rem;
+                margin: 0 -1.4em;
+                
+            }
+            @media (min-width:640px) and (max-width:1024px) {
+                font-size: 30px;
+            }
+            @media (min-width:1024px) {
+                font-size: 40px;
+                margin: 0;
+            }
+        }
+
+
+    }
+}

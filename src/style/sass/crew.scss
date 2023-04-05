@@ -1,0 +1,145 @@
+
+.crew {
+    background-image: url('../../public/assets/crew/background-crew-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width:640px) and (max-width:1024px) {
+        background-image: url('../../public/assets/crew/background-crew-tablet.jpg');
+    }
+    @media (min-width:1024px) {
+        background-image: url('../../public/assets/crew/background-crew-desktop.jpg');
+    }
+
+    .crew-bio {
+
+        @media (min-width:1024px) {
+            width: 50%;
+        }
+        h1 {
+            color: $blue;
+            font-family: $barlow-cond;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 22px;
+    
+            @media (min-width:1024px) {
+                font-size: 35px;
+            }
+            span {
+                font-weight: bold;
+                color: $grey;
+                margin-right: 1em;
+            }
+        }
+
+        div {
+
+            .slider {
+                
+                @media (min-width:1024px) {
+                    margin: 3em 0;
+                }
+    
+                li {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    background-color: $grey;
+                    margin: 0.7em;
+                    cursor: pointer;
+
+                    @media (min-width:1024px) {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+    
+                .active-slider {
+                    background-color: white;
+                }
+            }
+    
+            div {
+    
+                h2 {
+                    color: $grey;
+                    font-family: $Bellefair;
+                    text-transform: uppercase;
+                    font-size: 24px;
+    
+                    @media (min-width:1024px) {
+                        font-size: 32px;
+                        margin: 0;
+                    }
+                }
+                h3 {
+                    color: $blue;
+                    font-family: $Bellefair;
+                    text-transform: uppercase;
+                    font-size: 30px;
+    
+                    @media (min-width:640px) and (max-width:1024px) {
+                        font-size: 40px;
+                    }
+                    @media (min-width:1024px) {
+                        margin: 0;
+                        font-size: 56px;
+                    }
+                }
+                p {
+                    color: $blue;
+                    font-family: $barlow-cond;
+                    letter-spacing: 1px;
+                    font-size: 18px;
+                    text-align: center;
+                    margin: 1em;
+                    height: 15vh;
+                    
+                    @media (min-width:640px) and (max-width:1024px) {
+                        height: 11vh;
+                    }
+                    
+                    @media (min-width:1024px) {
+                        text-align: left;
+                        margin: 1em 0;
+                        height: 6vh;
+                    }
+                }
+            }
+        }
+    }
+    
+
+    .bloc-img {
+
+        width: 90%;
+        height: 70vw;
+        margin: 2em 1em;
+
+        @media (min-width:1024px) {
+            height: auto;
+            margin-top: 2em;
+        }
+        @media (min-width:1024px) {
+            max-width: 50%;
+            max-height: 50%;
+        }
+        img {
+            width: 22em;
+            height: auto;
+            padding: 0 4em;
+            border-bottom: 1px solid $grey;
+
+            @media (min-width:640px) and (max-width:1024px) {
+                width: 30em;
+            }
+            @media (min-width:1024px) {
+                width: 40em;
+            }
+        }
+    }
+    
+
+    
+}

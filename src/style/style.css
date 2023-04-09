@@ -43,6 +43,42 @@
   float: right;
   margin: 2em;
 }
+@media (max-width: 640px) {
+  .nav .menu a:nth-child(2) li::before {
+    content: "00 ";
+    font-weight: bold;
+  }
+  .nav .menu a:nth-child(3) li::before {
+    content: "01 ";
+    font-weight: bold;
+  }
+  .nav .menu a:nth-child(4) li::before {
+    content: "02 ";
+    font-weight: bold;
+  }
+  .nav .menu a:nth-child(5) li::before {
+    content: "03 ";
+    font-weight: bold;
+  }
+}
+@media (min-width: 1024px) {
+  .nav .menu a:nth-child(2) li::before {
+    content: "00 ";
+    font-weight: bold;
+  }
+  .nav .menu a:nth-child(3) li::before {
+    content: "01 ";
+    font-weight: bold;
+  }
+  .nav .menu a:nth-child(4) li::before {
+    content: "02 ";
+    font-weight: bold;
+  }
+  .nav .menu a:nth-child(5) li::before {
+    content: "03 ";
+    font-weight: bold;
+  }
+}
 .nav .menu a li {
   color: #ffffff;
   font-family: "Barlow", sans-serif;
@@ -70,42 +106,6 @@
     border-bottom: 3px solid transparent;
     padding: 3.5em 0;
     margin: 0 1.9vw;
-  }
-}
-@media (max-width: 640px) {
-  .nav .menu a li:nth-child(0n+2)::before {
-    content: "00 ";
-    font-weight: bold;
-  }
-  .nav .menu a li:nth-child(0n+3)::before {
-    content: "01 ";
-    font-weight: bold;
-  }
-  .nav .menu a li:nth-child(0n+4)::before {
-    content: "02 ";
-    font-weight: bold;
-  }
-  .nav .menu a li:nth-child(0n+5)::before {
-    content: "03 ";
-    font-weight: bold;
-  }
-}
-@media (min-width: 1024px) {
-  .nav .menu a li:nth-child(0n+2)::before {
-    content: "00 ";
-    font-weight: bold;
-  }
-  .nav .menu a li:nth-child(0n+3)::before {
-    content: "01 ";
-    font-weight: bold;
-  }
-  .nav .menu a li:nth-child(0n+4)::before {
-    content: "02 ";
-    font-weight: bold;
-  }
-  .nav .menu a li:nth-child(0n+5)::before {
-    content: "03 ";
-    font-weight: bold;
   }
 }
 
@@ -269,6 +269,10 @@
     font-size: 22px;
   }
 }
+.destination .menu-dest ul li:hover {
+  border-bottom: 2px solid grey;
+  color: grey;
+}
 .destination .menu-dest h2 {
   font-size: 60px;
   font-family: "Bellefair", serif;
@@ -369,10 +373,13 @@
   margin: 0.7em;
   cursor: pointer;
 }
+.crew .crew-bio div .slider li:hover {
+  background-color: #25262b;
+}
 @media (min-width: 1024px) {
   .crew .crew-bio div .slider li {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
   }
 }
 .crew .crew-bio div .slider .active-slider {
@@ -459,6 +466,86 @@
 @media (min-width: 1024px) {
   .crew .bloc-img img {
     width: 40em;
+  }
+}
+
+.techno {
+  background-image: url("../../public/assets/technology/background-technology-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 640px) and (max-width: 1024px) {
+  .techno {
+    background-image: url("../../public/assets/technology/background-technology-tablet.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .techno {
+    background-image: url("../../public/assets/technology/background-technology-desktop.jpg");
+  }
+}
+.techno section h1 {
+  color: #D0D6F9;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 22px;
+}
+@media (min-width: 1024px) {
+  .techno section h1 {
+    font-size: 34px;
+  }
+}
+.techno section h1 span {
+  font-weight: bold;
+  color: grey;
+  margin-right: 1em;
+}
+.techno section .rond .active-tech {
+  background-color: white;
+  color: #25262b;
+}
+.techno section .rond button:hover {
+  border: 2px solid white;
+}
+.techno section .text-tech h2 {
+  color: grey;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 15px;
+  margin: 1em 0;
+}
+@media (min-width: 1024px) {
+  .techno section .text-tech h2 {
+    font-size: 25px;
+  }
+}
+.techno section .text-tech h3 {
+  color: #D0D6F9;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+  font-size: 28px;
+}
+@media (min-width: 1024px) {
+  .techno section .text-tech h3 {
+    font-size: 50px;
+  }
+}
+.techno section .text-tech p {
+  color: #D0D6F9;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  font-size: 17px;
+  text-align: center;
+  margin: 1em;
+}
+@media (min-width: 1024px) {
+  .techno section .text-tech p {
+    font-size: 22px;
+    text-align: left;
+    margin: 1em 0;
   }
 }
 

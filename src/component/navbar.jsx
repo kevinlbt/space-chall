@@ -20,7 +20,7 @@ export default function NavBar ({active}) {
             <a href="/"><li className={active === "home" ? "active-menu" : null}>Home</li></a>
             <a href="/destination"><li className={active === "destination" ? "active-menu" : null}>Destination</li></a>
             <a href="/crew"><li className={active === "crew" ? "active-menu" : null}>Crew</li></a>
-            <a href="/technology"><li>Technology</li></a>
+            <a href="/technology"><li className={active === "technology" ? "active-menu" : null}>Technology</li></a>
         </ul>
         <svg onClick={handleClick} className="sm:hidden mt-8 mr-7 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fillRule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg>
     </nav>

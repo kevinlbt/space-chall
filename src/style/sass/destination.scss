@@ -68,6 +68,11 @@
                 @media (min-width:1024px) {
                     font-size: 22px;
                 }
+
+                &:hover {
+                    border-bottom: 2px solid $grey;
+                    color: $grey;
+                }
             }
             
         }

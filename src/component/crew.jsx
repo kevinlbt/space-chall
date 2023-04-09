@@ -36,7 +36,7 @@ export default function Crew () {
     function handleClick (e) {
         setIndexCrew(e.target.id)
     }
-    return  <div className="crew h-auto lg:h-screen">
+    return  <div className="crew h-screen sm:h-auto lg:h-auto lg:pb-48">
                 <NavBar active="crew" />
                 <CrewMember handleClick={handleClick} data={crewData} indexCrew={indexCrew} />
             </div>

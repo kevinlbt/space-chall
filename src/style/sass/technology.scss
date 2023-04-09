@@ -1,0 +1,86 @@
+.techno {
+    background-image: url('../../public/assets/technology/background-technology-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width:640px) and (max-width:1024px) {
+        background-image: url('../../public/assets/technology/background-technology-tablet.jpg');
+    }
+    @media (min-width:1024px) {
+        background-image: url('../../public/assets/technology/background-technology-desktop.jpg');
+    }
+
+    section {
+
+        h1 {
+            color: $blue;
+            font-family: $barlow-cond;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 22px;
+
+            @media (min-width:1024px) {
+                font-size: 34px;
+            }
+
+            span {
+                font-weight: bold;
+                color: $grey;
+                margin-right: 1em;
+            }
+        }
+
+        .rond {
+            .active-tech {
+                background-color: white;
+                color: $nav-color;
+            }
+
+            button {
+                &:hover {
+                    border: 2px solid white;
+                }
+            }
+        }
+        .text-tech {
+
+            h2 {
+                color: $grey;
+                font-family: $barlow-cond;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-size: 15px;
+                margin: 1em 0;
+
+                @media (min-width:1024px) {
+                    font-size: 25px;
+                }
+            }
+            h3 {
+                color: $blue;
+                font-family: $Bellefair;
+                text-transform: uppercase;
+                font-size: 28px;
+
+                @media (min-width:1024px) {
+                    font-size: 50px;
+                }
+            }
+            p {
+                color: $blue;
+                font-family: $barlow-cond;
+                font-weight: lighter;
+                letter-spacing: 1px;
+                font-size: 17px;
+                text-align: center;
+                margin: 1em;
+                
+                @media (min-width:1024px) {
+                    font-size: 22px;
+                    text-align: left;
+                    margin: 1em 0;
+                }
+            }
+        }
+    }
+}

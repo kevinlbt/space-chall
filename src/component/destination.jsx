@@ -10,7 +10,7 @@ function Planete ({data, handleClick}) {
     return  <div className="flex flex-col justify-center items-center mx-6 my-2 lg:flex-row lg:w-full lg:mb-12">
                 <div className="lg:w-2/4 sm:w-full">
                     <h1 className="sm:text-left sm:mt-5 lg:pl-16 lg:my-16"><span>01</span> Pick your destination </h1>
-                    <img className="m-5 sm:mt-12 sm:mx-auto" src={data.images.webp} alt={data.name}></img>
+                    <img className="m-5 sm:mt-12 sm:mx-auto" srcSet={data.images.webp} alt={data.name}></img>
                 </div>
                 <section className="lg:w-1/3">
                     <article className="menu-dest flex flex-col justify-center items-center lg:items-start lg:mt-16">
